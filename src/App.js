@@ -19,23 +19,31 @@ function App() {
       <Router>
         <Routes>
           {/* Users */}
-          <Route exact path="/users" element={<List />} />
-          <Route exact path="/users/:userId" element={<Single />} />
+          <Route exact path="/AdminDashboard/users" element={<List />} />
           <Route
             exact
-            path="/users/new"
+            path="/AdminDashboard/users/:userId"
+            element={<Single />}
+          />
+          <Route
+            exact
+            path="/AdminDashboard/users/new"
             element={<New inputs={userInputs} />}
           />
           {/* Products */}
-          <Route exact path="/products" element={<List />} />
-          <Route exact path="/products/:productId" element={<Single />} />
+          <Route exact path="/AdminDashboard/products" element={<List />} />
           <Route
             exact
-            path="/products/new"
+            path="/AdminDashboard/products/:productId"
+            element={<Single />}
+          />
+          <Route
+            exact
+            path="/AdminDashboard/products/new"
             element={<New inputs={userInputs} />}
           />
-          <Route exact path="/login" element={<Login />} />
-          <Route exact path="/" element={<Home />} />
+          <Route exact path="/AdminDashboard/login" element={<Login />} />
+          <Route exact path="/AdminDashboard/" element={<Home />} />
         </Routes>
       </Router>
     </div>
