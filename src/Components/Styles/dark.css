@@ -1,0 +1,69 @@
+.App.dark {
+  background-color: #222;
+  color: #9c9c9c;
+}
+
+.App.dark .chartGrid {
+  stroke: rgba(228, 228, 228, 0.219);
+}
+
+.App.dark .table .MuiPaper-root {
+  background-color: #222;
+}
+
+.App.dark .table .tableCell {
+  color: gray;
+}
+
+.App.dark .navbar {
+  color: #999;
+  border-color: #333;
+}
+
+.App.dark .navbar .search {
+  border-color: gray;
+}
+
+.App.dark .sidebar {
+  background-color: #222;
+  border-color: #333;
+}
+
+.App.dark .sidebar hr {
+  border-color: #333;
+}
+
+.App.dark .dataTable .MuiDataGrid-root {
+  color: gray;
+  border: none;
+}
+
+.App.dark .dataTable .MuiDataGrid-root .viewButton,
+.App.dark .dataTable .MuiDataGrid-root .deleteButton,
+.App.dark .dataTable .MuiDataGrid-root .cellWithStatus {
+  color: #333;
+}
+
+.App.dark .dataTable .MuiDataGrid-root .viewButton {
+  background-color: darkblue;
+  color: gray;
+}
+
+.App.dark .dataTable .MuiDataGrid-root .deleteButton {
+  background-color: red;
+  color: #333;
+}
+
+.App.dark .dataTable .MuiDataGrid-root .cellWithStatus.active {
+  background-color: #00d000;
+}
+
+.App.dark .dataTable .MuiDataGrid-root .cellWithStatus.passive {
+  background-color: red;
+}
+
+.App.dark .new input {
+  background-color: transparent;
+  color: white;
+}
+/*# sourceMappingURL=dark.css.map */

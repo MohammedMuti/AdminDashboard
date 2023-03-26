@@ -1,0 +1,85 @@
+@import "../Common/Variables/Variable.scss";
+.single {
+  display: flex;
+  .singleContainer {
+    flex: 6;
+
+    .title {
+      font-size: 16px;
+      color: lightgray;
+      margin-bottom: 20px;
+    }
+
+    .top {
+      padding: 20px;
+      display: flex;
+      gap: 20px;
+
+      .left {
+        flex: 1;
+        box-shadow: $box-shad;
+        padding: 20px;
+        position: relative;
+
+        .editButton {
+          position: absolute;
+          top: 0;
+          right: 0;
+          padding: 5px;
+          font-size: 12px;
+          color: $purple;
+          background-color: #7551f84a;
+          border-radius: 0 0 0 5px;
+        }
+
+        .item {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+
+          img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+
+          .details {
+            h2 {
+              margin-bottom: 10px;
+              color: #555;
+            }
+
+            .detailItem {
+              margin-bottom: 10px;
+              font-size: 14px;
+
+              .itemKey {
+                font-weight: bold;
+                color: gray;
+                margin-right: 10px;
+              }
+
+              .itemValue {
+                font-weight: 300;
+              }
+            }
+          }
+        }
+
+        .title {
+        }
+      }
+
+      .right {
+        flex: 2;
+      }
+    }
+
+    .bottom {
+      box-shadow: $box-shad;
+      padding: 20px;
+      margin: 10px 20px;
+    }
+  }
+}

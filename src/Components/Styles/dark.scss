@@ -1,0 +1,73 @@
+.App.dark {
+  background-color: #222;
+  color: rgb(156, 156, 156);
+
+  .chartGrid {
+    stroke: rgba(228, 228, 228, 0.219);
+  }
+
+  .table {
+    .MuiPaper-root {
+      background-color: #222;
+    }
+    .tableCell {
+      color: gray;
+    }
+  }
+
+  .navbar {
+    color: #999;
+    border-color: #333;
+
+    .search {
+      border-color: gray;
+    }
+  }
+
+  .sidebar {
+    background-color: #222;
+    border-color: #333;
+
+    hr {
+      border-color: #333;
+    }
+  }
+
+  .dataTable {
+    .MuiDataGrid-root {
+      color: gray;
+      border: none;
+
+      .viewButton,
+      .deleteButton,
+      .cellWithStatus {
+        color: #333;
+      }
+
+      .viewButton {
+        background-color: darkblue;
+        color: gray;
+      }
+      .deleteButton {
+        background-color: red;
+        color: #333;
+      }
+
+      .cellWithStatus {
+        &.active {
+          background-color: rgb(0, 208, 0);
+        }
+        &.passive {
+          background-color: red;
+        }
+      }
+    }
+  }
+
+  .new {
+    input {
+      background-color: transparent;
+      color: white;
+    }
+  }
+}

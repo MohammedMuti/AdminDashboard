@@ -1,0 +1,24 @@
+.table .cellWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.table .status {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.table .status.Approved {
+  color: green;
+  background-color: rgba(0, 128, 0, 0.151);
+}
+
+.table .status.Pending {
+  color: goldenrod;
+  background-color: rgba(189, 189, 3, 0.103);
+}
+/*# sourceMappingURL=Table.css.map */
