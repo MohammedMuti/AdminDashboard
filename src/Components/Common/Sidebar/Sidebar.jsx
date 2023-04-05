@@ -39,7 +39,7 @@ const Sidebar = () => {
       <div className="sidebar">
         <div className="top">
           <span className="logo">
-            <Link to="/AdminDashboard">
+            <Link to="/">
               <h1>Admin Dashboard</h1>
             </Link>
           </span>
@@ -49,77 +49,77 @@ const Sidebar = () => {
           <ul>
             <p>MAIN</p>
             <li>
-              <Link to="/AdminDashboard">
+              <Link to="/">
                 <Dashboard />
                 <span>Dashboard</span>
               </Link>
             </li>
             <p>LISTS</p>
             <li>
-              <Link to="/AdminDashboard/users">
+              <Link to="/users">
                 <PersonOutlineOutlined />
                 <span>Users</span>
               </Link>
             </li>
             <li>
-              <Link to="/AdminDashboard/products">
+              <Link to="/products">
                 <Store />
                 <span>Products</span>
               </Link>
             </li>
             <li>
-              <Link to="/AdminDashboard">
+              <Link to="/">
                 <CreditCard />
                 <span>Orders</span>
               </Link>
             </li>
             <li>
-              <Link to="/AdminDashboard">
+              <Link to="/">
                 <LocalShipping />
                 <span>Delivery</span>
               </Link>
             </li>
             <p>USEFUL</p>
             <li>
-              <Link to="/AdminDashboard">
+              <Link to="/">
                 <InsertChart />
                 <span>Stats</span>
               </Link>
             </li>
             <li>
-              <Link to="/AdminDashboard">
+              <Link to="/">
                 <NotificationsNone />
                 <span>Notifications</span>
               </Link>
             </li>
             <p>SERVICE</p>
             <li>
-              <Link to="/AdminDashboard">
+              <Link to="/">
                 <SettingsSystemDaydream />
                 <span>System Health</span>
               </Link>
             </li>
             <li>
-              <Link to="/AdminDashboard">
+              <Link to="/">
                 <PsychologyOutlined />
                 <span>Logs</span>
               </Link>
             </li>
             <li>
-              <Link to="/AdminDashboard">
+              <Link to="/">
                 <SettingsApplications />
                 <span>Settings</span>
               </Link>
             </li>
             <p>USER</p>
             <li>
-              <Link to="/AdminDashboard">
+              <Link to="/">
                 <AccountCircleOutlined />
                 <span>Profile</span>
               </Link>
             </li>
             <li>
-              <Link to="/AdminDashboard">
+              <Link to="/">
                 <ExitToApp />
                 <span>Logout</span>
               </Link>

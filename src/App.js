@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Components/Home/Home.jsx";
 import Login from "./Components/Login/Login";
 import List from "./Components/List/List";
@@ -19,31 +19,23 @@ function App() {
       <Router>
         <Routes>
           {/* Users */}
-          <Route exact path="/AdminDashboard/users" element={<List />} />
+          <Route exact path="/users" element={<List />} />
+          <Route exact path="/users/:userId" element={<Single />} />
           <Route
             exact
-            path="/AdminDashboard/users/:userId"
-            element={<Single />}
-          />
-          <Route
-            exact
-            path="/AdminDashboard/users/new"
+            path="/users/new"
             element={<New inputs={userInputs} />}
           />
           {/* Products */}
-          <Route exact path="/AdminDashboard/products" element={<List />} />
+          <Route exact path="/products" element={<List />} />
+          <Route exact path="/products/:productId" element={<Single />} />
           <Route
             exact
-            path="/AdminDashboard/products/:productId"
-            element={<Single />}
-          />
-          <Route
-            exact
-            path="/AdminDashboard/products/new"
+            path="/products/new"
             element={<New inputs={userInputs} />}
           />
-          <Route exact path="/AdminDashboard/login" element={<Login />} />
-          <Route exact path="/AdminDashboard/" element={<Home />} />
+          <Route exact path="/login" element={<Login />} />
+          <Route exact path="/" element={<Home />} />
         </Routes>
       </Router>
     </div>
