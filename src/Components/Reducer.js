@@ -2,7 +2,7 @@ import { useReducer } from "react";
 import ContextProvider from "./Context";
 
 const defaultState = {
-  dark: true,
+  dark: false,
 };
 
 const reducer = (state, action) => {
